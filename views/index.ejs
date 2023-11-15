@@ -95,6 +95,19 @@
       z-index: 1500;
     }
   </style>
+<style>
+  @media screen and (max-width:400px) {
+    .nav {
+      flex-direction: row-reverse;
+    }
+  }
+
+  @media screen and (min-width:895px) {
+    .nav {
+      flex-direction: row;
+    }
+  }
+</style>
 
 
   <!-- Custom styles for this template -->
@@ -198,7 +211,7 @@
         </div>
       </nav>
 
-      <section class="my-3 mx-3 d-flex justify-content-center">
+      <section class="my-3 mx-3 d-flex justify-content-center nav">
         <% item.forEach(item=> { %>
           <div class="card mx-2 my-2" style="width: 18rem;">
             <div class="card-body">
